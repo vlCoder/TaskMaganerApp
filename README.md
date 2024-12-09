@@ -2,12 +2,10 @@
 
 Este é um aplicativo de gerenciamento de tarefas construído com **React Native** e utilizando o padrão **BLoC (Business Logic Component)** para gerenciar o estado. O app permite ao usuário adicionar, listar, e marcar tarefas como concluídas.
 
-
 <div style="display: flex; justify-content: space-between;">
   <img src="assets/Tela-lista-tarefa.jpeg" alt="Lista de Tarefas" width="300" />
   <img src="assets/Tela-add-tarefa.jpeg" alt="adicionar Tarefas" width="300" />
 </div>
-
 
 ## Funcionalidades
 
@@ -26,6 +24,8 @@ Este é um aplicativo de gerenciamento de tarefas construído com **React Native
 - **Material Design**: Para a criação de componentes com um design moderno e consistente.
 
 ## Por que Usamos o Padrão BLoC?
+
+![BLoC Parttern](assets/bloc-pattern-clean-architecture-reactjs.png)
 
 O **BLoC (Business Logic Component)** é um padrão de arquitetura que ajuda a separar a lógica de negócios da interface do usuário. Esse padrão é muito útil em aplicativos que exigem um gerenciamento eficiente do estado, pois promove a reutilização de código, facilita os testes e melhora a manutenibilidade do projeto.
 
