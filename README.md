@@ -2,8 +2,11 @@
 
 Este é um aplicativo de gerenciamento de tarefas construído com **React Native** e utilizando o padrão **BLoC (Business Logic Component)** para gerenciar o estado. O app permite ao usuário adicionar, listar, e marcar tarefas como concluídas.
 
-![Lista de Tarefas](assets/Tela-lista-tarefa.jpeg)
-![Adicionando Tarefa ](assets/Tela-lista-tarefa.jpeg)
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/Tela-lista-tarefa.jpeg" alt="Lista de Tarefas" width="300" />
+  <img src="assets/Tela-add-tarefa.jpeg" alt="adicionar Tarefas" width="300" />
+</div>
 
 
 ## Funcionalidades
