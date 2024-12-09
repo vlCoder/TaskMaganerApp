@@ -1,5 +1,7 @@
 # TaskManager App - Gerenciador de Tarefas
 
+## Desafio Parte 1 se encontra nesse link do [Notion](https://www.notion.so/Desafio-Vertem-Parte-1-15716f60a83180a4b49de3fa8a99b7e8) 
+
 Este é um aplicativo de gerenciamento de tarefas construído com **React Native** e utilizando o padrão **BLoC (Business Logic Component)** para gerenciar o estado. O app permite ao usuário adicionar, listar, e marcar tarefas como concluídas.
 
 <div style="display: flex; justify-content: space-between;">
