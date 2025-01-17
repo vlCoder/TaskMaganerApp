@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { loadTasks, saveTasks, clearTasks } from '../storage/storage';
+import { loadTasks, saveTasks } from '../storage/storage';
 
 const TaskContext = createContext(); // Criando o contexto
 

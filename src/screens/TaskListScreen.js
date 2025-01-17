@@ -3,6 +3,7 @@ import { View, Text, FlatList, StyleSheet } from 'react-native';
 import TaskCard from '../components/TaskCard';
 import RoundTaskButton from '../components/RoundTaskButton';
 import { useTaskContext } from '../bloc/taskBloc';
+import AdBanner from '../components/AdBanner';
 
 const TaskListScreen = ({ navigation }) => {
   const { tasks, toggleTaskStatus, clearCompleted } = useTaskContext();
@@ -10,36 +11,45 @@ const TaskListScreen = ({ navigation }) => {
   const keyExtractor = (item) => item.id ? item.id.toString() : `${Math.random()}`;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tarefas do Dia</Text>
+    <>
+      <View style={styles.container}>
+        <Text style={styles.title}>Tarefas do Dia</Text>
 
-      <FlatList
-        data={tasks}
-        renderItem={({ item }) => (
-          <TaskCard task={item} onToggleStatus={toggleTaskStatus} />
-        )}
-        keyExtractor={keyExtractor}
-        ListEmptyComponent={
-            <View style={styles.emptyContainer}> 
-                <Text style={styles.emptyText}>Não há nenhuma tarefa</Text>
+        <FlatList
+          data={tasks}
+          renderItem={({ item }) => (
+            <TaskCard
+              task={item}
+              onToggleStatus={toggleTaskStatus}
+            />
+          )}
+          keyExtractor={keyExtractor}
+          ListEmptyComponent={
+            <View style={styles.emptyContainer}>
+              <Text style={styles.emptyText}>
+                Não há nenhuma tarefa
+              </Text>
             </View>
-            
-        }
-      />
-      
-      <View style={styles.buttonContainer}>
-        <RoundTaskButton
-          iconName="trash"
-          onPress={clearCompleted}
-          style={styles.clearButton}
+          }
         />
-        <RoundTaskButton
-          iconName="add"
-          onPress={() => navigation.navigate('AddTask')}
-          style={styles.addButton}
-        />
+
+        <View style={styles.buttonContainer}>
+          <RoundTaskButton
+            iconName="trash"
+            onPress={clearCompleted}
+            style={styles.clearButton}
+          />
+          <RoundTaskButton
+            iconName="add"
+            onPress={() => navigation.navigate('AddTask')}
+            style={styles.addButton}
+          />
+        </View>
       </View>
-    </View>
+      <View style={styles.adsContainer}>
+        <AdBanner />
+      </View>
+    </>
   );
 };
 
@@ -72,10 +82,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     position: 'absolute',
-    bottom: 20,
+    bottom: 30,
     left: 20,
     right: 20,
   },
+  adsContainer:{
+    flexDirection: "row", 
+    position: "relative", 
+    justifyContent: "center",
+  }
 
 });
 

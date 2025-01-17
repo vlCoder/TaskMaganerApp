@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "TaskManagerApp",
+    "name": "Gerenciador de Tarefas",
     "slug": "TaskManagerApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,9 +8,9 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#6a1b9a"
     },
     "ios": {
       "supportsTablet": true
@@ -19,10 +19,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.vlcoder.TaskManagerApp"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2179149090788550~4888846700",
+          "iosAppId": "ca-app-pub-xxxxxxxx~xxxxxxxx"
+        }
+      ],
+      [
+        "expo-dev-client"
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "44916c73-dfac-472c-8d2d-fbf081bf1333"
+      }
     }
   }
 }
