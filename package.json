@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "build-dev": "eas build --profile development --platform android",
     "build-apk": "eas build -p android --profile preview",
-    "build-aab-prod": "eas build -p android --profile production"
+    "build-prod": "eas build --platform android --profile production"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.0",
