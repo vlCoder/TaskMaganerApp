@@ -32,8 +32,8 @@ const TaskListScreen = ({ navigation }) => {
             </View>
           }
         />
-
-        <View style={styles.buttonContainer}>
+      </View>
+      <View style={styles.buttonContainer}>
           <RoundTaskButton
             iconName="trash"
             onPress={clearCompleted}
@@ -44,7 +44,6 @@ const TaskListScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('AddTask')}
             style={styles.addButton}
           />
-        </View>
       </View>
       <View style={styles.adsContainer}>
         <AdBanner />
@@ -56,8 +55,13 @@ const TaskListScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    paddingLeft: 20,
+    paddingRight:20,
+    paddingTop: 20,
     backgroundColor: '#f4f4f4',
+    height:400,
+    paddingBottom:75,
+
   },
   title: {
     fontSize: 24,
@@ -81,10 +85,14 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center', 
     position: 'absolute',
-    bottom: 30,
+    bottom: 50,
     left: 20,
     right: 20,
+    height: 100,
+    backgroundColor:'#f4f4f4',
+
   },
   adsContainer:{
     flexDirection: "row", 
