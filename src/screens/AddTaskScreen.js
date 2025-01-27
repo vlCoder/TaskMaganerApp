@@ -13,7 +13,7 @@ const TaskAddScreen = ({ navigation }) => {
   const addNewTask = () => {
     if (taskName.trim()) {
       const newTask = {
-        id: tasks.length + 1, 
+        id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,  
         name: taskName, 
         completed: false,
       };
