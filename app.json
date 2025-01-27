@@ -2,7 +2,8 @@
   "expo": {
     "name": "Gerenciador de Tarefas",
     "slug": "TaskManagerApp",
-    "version": "1.0.0",
+    "version": "15.0.0",
+
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
