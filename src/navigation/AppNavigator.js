@@ -15,7 +15,14 @@ const AppNavigator = () => {
             headerTintColor: '#fff', 
             headerTitleAlign: 'center', 
             headerTitleStyle: { fontWeight: 'bold' },
-          }}>
+            headerLeftContainerStyle: {
+              width: 48, 
+              height: 48, 
+              justifyContent: 'center',
+              alignItems: 'center',
+            },
+          }}
+        >
         <Stack.Screen name="TaskList" options={{ headerTitle: 'Lista de Tarefas' }} component={TaskListScreen} />
         <Stack.Screen name="AddTask" options={{ headerTitle: 'Adicionar de Tarefas' }} component={AddTaskScreen} />
       </Stack.Navigator>

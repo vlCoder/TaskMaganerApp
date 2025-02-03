@@ -13,14 +13,18 @@ const TaskCard = ({ task, onToggleStatus }) => {
 
 const styles = StyleSheet.create({
   card: {
+    minHeight: 48,
     padding: 10,
     marginBottom: 10,
+    paddingVertical: 8, 
+    paddingHorizontal: 16,
     backgroundColor: '#fff',
     borderRadius: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
+    justifyContent: 'center',
   },
   text: {
     fontSize: 18,
