@@ -12,7 +12,7 @@ const TaskListScreen = ({ navigation }) => {
 
   return (
     <>
-      <View style={styles.container}>
+      <View accessible={true} style={styles.container}>
         <Text style={styles.title}>Tarefas do Dia</Text>
 
         <FlatList
@@ -35,11 +35,17 @@ const TaskListScreen = ({ navigation }) => {
       </View>
       <View style={styles.buttonContainer}>
           <RoundTaskButton
+            accessible={true}
+            accessibilityLabel="excluir tarefas completas"
+            accessibilityHint="excluir tarefas já concluídas"
             iconName="trash"
             onPress={clearCompleted}
             style={styles.clearButton}
           />
           <RoundTaskButton
+           accessible={true}
+           accessibilityLabel="adiciona tarefas"
+           accessibilityHint="Vai para a tela de adicionar"
             iconName="add"
             onPress={() => navigation.navigate('AddTask')}
             style={styles.addButton}

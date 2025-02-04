@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
+    minHeight: 48,
+    paddingTop:10,
   },
   completed: {
     textDecorationLine: 'line-through',

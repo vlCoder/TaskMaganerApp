@@ -29,9 +29,11 @@ const TaskAddScreen = ({ navigation }) => {
 
   return (
     <>
-      <View style={styles.container}>
+      <View accessible={true} style={styles.container}>
         <Text style={styles.title}>Adicionar Tarefa</Text>
         <TaskInput
+          accessibilityLabel="input"
+          accessibilityLabelledBy="Adicionar tarefa"
           style={styles.input}
           placeholder="Digite o nome da tarefa"
           value={taskName}

@@ -11,8 +11,8 @@ const TaskButton = ({ onPress, title }) => {
 
 const styles = StyleSheet.create({
   button: {
-    minHeight: 42,
-    padding: 10,
+    minHeight: 50,
+    padding: 14,
     backgroundColor: '#6a1b9a',
     borderRadius: 25,
     alignItems: 'center',
