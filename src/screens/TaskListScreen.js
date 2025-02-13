@@ -44,7 +44,7 @@ const TaskListScreen = ({ navigation }) => {
           />
           <RoundTaskButton
            accessible={true}
-           accessibilityLabel="adiciona tarefas"
+           accessibilityLabel="Botão para adiciona tarefas"
            accessibilityHint="Vai para a tela de adicionar"
             iconName="add"
             onPress={() => navigation.navigate('AddTask')}
