@@ -1,6 +1,6 @@
 {
   "name": "taskmanagerapp",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
